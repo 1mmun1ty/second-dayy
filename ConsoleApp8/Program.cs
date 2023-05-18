@@ -42,7 +42,7 @@ namespace ConsoleApp8
             {
                 max = c;
             }
-            Console.WriteLine($"Максимальное число из этих 3 цифр:{max}");
+            Console.WriteLine($"Максимальное число из этих 3 цифр: {max}");
             Console.ReadKey();
 
 
@@ -65,8 +65,24 @@ namespace ConsoleApp8
             {
                 sum += three;
             }
-            Console.WriteLine($"Сумма трёх положительных чисел{sum}");
+            Console.WriteLine($"Сумма трёх положительных чисел {sum}");
             Console.ReadKey();
-        }
+
+            Console.WriteLine("Введите число: ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            if (x > 10)
+            {
+                x *= 2;
+                Console.WriteLine($"Введенное число больше 10, умножим его на 2: {x}");
+            }
+            else if (x < 10)
+            {
+                Console.WriteLine("Введеное число меньше 10, не изменяем его");
+            }
+   
+            Console.ReadKey();
+            
+           
+        }  
     }
 }
